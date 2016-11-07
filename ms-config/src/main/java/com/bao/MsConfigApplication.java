@@ -3,14 +3,14 @@ package com.bao;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
-@EnableZuulProxy
+@EnableConfigServer
 @EnableDiscoveryClient
 @SpringBootApplication
-public class MsGatewayApplication {
+public class MsConfigApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(MsGatewayApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(MsConfigApplication.class, args);
+	}
 }

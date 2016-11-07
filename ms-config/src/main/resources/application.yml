@@ -1,5 +1,19 @@
+spring:
+  application:
+    name: ms-config
+    instance_id: 1
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wangfeishsh/config-repo.git
+          username: baochunyu1987@163.com
+          password: a10051544
+#          basedir: target/config
+          clone-on-start: true
+          searchPaths: ms*
 server:
-  port: 9002
+  port: 9003
 
 eureka:
   instance:
@@ -14,7 +28,6 @@ eureka:
 #      default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
 
 #logging:
 #  level:
