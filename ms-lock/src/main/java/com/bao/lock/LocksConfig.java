@@ -10,7 +10,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
-public class LocksApplication extends WebMvcConfigurerAdapter {
+public class LocksConfig extends WebMvcConfigurerAdapter {
 	
 	@Bean
 	public LocksController locksController(LockService lockService) {
