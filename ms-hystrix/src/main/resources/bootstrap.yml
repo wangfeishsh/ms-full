@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ms-hystrix
+    instance_id: 1
+  cloud:
+    config:
+      uri: http://localhost:9003
