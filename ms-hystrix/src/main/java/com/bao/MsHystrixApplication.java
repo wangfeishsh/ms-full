@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @SpringBootApplication
 @Slf4j
+//@EnableHystrix
 @EnableHystrixDashboard
 public class MsHystrixApplication {
 

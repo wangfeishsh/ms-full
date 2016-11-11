@@ -1,6 +1,27 @@
 server:
   port: 9005
 
+info:
+  component: Turbine
+
+PREFIX:
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+management:
+  port: 8990
+
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: 'OFF'
+    # org.springframework.integration: DEBUG
+
+
 eureka:
   instance:
     preferIpAddress: true
