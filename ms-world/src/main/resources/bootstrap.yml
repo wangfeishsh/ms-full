@@ -2,8 +2,8 @@ spring:
   application:
     name: ms-world
     instance_id: 1
-  profiles:
-    active: dev
-  cloud:
-    config:
-      uri: http://localhost:9003
+#  profiles:
+#    active: dev
+#  cloud:
+#    config:
+#      uri: http://localhost:9003

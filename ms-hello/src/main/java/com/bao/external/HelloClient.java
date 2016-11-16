@@ -11,4 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface HelloClient {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     String world();
+
+    @RequestMapping(value = "/hystrix", method = RequestMethod.GET)
+    String hystrix();
 }

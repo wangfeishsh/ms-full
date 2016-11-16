@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableZuulProxy
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableOAuth2Sso
+//@EnableOAuth2Sso
 public class MsGatewayApplication {
 
     public static void main(String[] args) {
